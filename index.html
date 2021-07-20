@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        body {
+            background-image: url("Background_Dark.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <!-- Logo -->
+        <div>
+            <a href="Home.html"><img class="logo" src="Logo.png"></a>
+        </div>
+
+        <div class="container1">
+
+            <!-- Lable -->
+
+            <h1 id="headline">Countdown</h1>
+            <div id="countdown">
+                <ul>
+                    <li><span id="hours"></span>Hours</li>
+                    <li><span id="minutes"></span>Minutes</li>
+                    <li><span id="seconds"></span>Seconds</li>
+                </ul>
+            </div>
+
+            <!-- Button timer -->
+
+            <div id="btntime">
+                <button id="btntime1">30m</button>
+                <button id="btntime2">1h</button>
+                <button id="btntime3">1h30m</button>
+                <button id="btntime4">2h</button>
+            </div>
+
+            <!-- Input timer -->
+
+            <div>
+                <div>
+                    <input id="hour" type="text" maxlength="2" placeholder="Nhập giờ">
+                    <span id="space">:</span>
+                    <input id="minute" type="text" maxlength="2" placeholder="Nhập phút">
+                    </span>
+                </div>
+
+                <div>
+                    <button id="start" onClick="start()">Start</button>
+                    <button id="stop" onclick="stop()">Stop</button>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="Page2.js"></script>
+
+
+
+</body>
+
+</html>
